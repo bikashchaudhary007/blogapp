@@ -6,9 +6,10 @@ import '../widgets/auth_field.dart';
 import '../widgets/auth_gradient_button.dart';
 
 class LoginPage extends StatefulWidget {
-  static route()=>  MaterialPageRoute(
-    builder: (context) => const LoginPage(),
-  );
+  static route() => MaterialPageRoute(
+        builder: (context) => const LoginPage(),
+      );
+
   const LoginPage({super.key});
 
   @override
@@ -58,8 +59,9 @@ class _LoginPageState extends State<LoginPage> {
                   isObscureText: true,
                 ),
                 const SizedBox(height: 20),
-                const AuthGradientButton(
+                AuthGradientButton(
                   buttonText: 'Sign In',
+                  onPressed: () {},
                 ),
                 const SizedBox(height: 20),
                 GestureDetector(
